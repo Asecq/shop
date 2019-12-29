@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:background="@color/colorAccent"
+    tools:context=".LoginActivity">
+
+        <ImageView
+            android:id="@+id/logo_login"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:src="@drawable/tower"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            />
+
+    <TextView
+        android:id="@+id/text_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="سوق الشورجة الألكتروني"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/logo_login"
+
+        />
+
+    <EditText
+        android:id="@+id/phone_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs_desgin"
+        android:layout_below="@+id/text_login"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:theme="@style/CustomEditTextView"
+        android:hint="رقم الحساب"
+        android:textColorHint="#646060"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        />
+    <EditText
+        android:id="@+id/pass_login"
+        android:inputType="textPassword"
+        android:layout_below="@+id/phone_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs_desgin"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="كلمة السر"
+        android:textColorHint="#646060"
+        android:theme="@style/CustomEditTextView"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear_1"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pass_login"
+        android:layout_marginTop="10dp"
+        >
+        <com.rey.material.widget.CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Material.Drawable.CheckBox"
+            android:id="@+id/remimber_mee"
+            android:text="تذكرني ؟"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            app:cbd_strokeColor="@color/colorPrimaryDark"
+            />
+        <TextView
+            android:id="@+id/forget_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forget Password ?"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_marginLeft="80dp"
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#003D5B"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:layout_below="@id/linear_1"
+        android:textColor="@color/white"
+        android:text="تسجيل دخول"
+        />
+    <TextView
+        android:id="@+id/admin_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="انا أدمن ؟"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@id/login_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:visibility="invisible"
+        />
+    <TextView
+        android:id="@+id/not_admin_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="لست أدمن"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@id/login_btn"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:visibility="invisible"
+        />
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:background="#003D5B"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+
+    </LinearLayout>
+</RelativeLayout>

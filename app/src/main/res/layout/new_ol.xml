@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layoutDirection="rtl"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/message_dialog"
+            android:text="هذه المادة موجودة مسبقاّ في المحفظة يجب الدخول في مادة جديدة"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="17dp"
+            android:textColor="#CA1414"
+            android:layout_marginTop="10dp"
+            />
+        <Button
+            android:id="@+id/msg_ok"
+            android:text="موافق"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:background="#009688"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

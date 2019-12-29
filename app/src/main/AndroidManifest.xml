@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alii.shope">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tower"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/tower"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".usersforselectActivity"></activity>
+        <activity android:name=".printer_fatora" />
+        <activity android:name=".PostsMarka" />
+        <activity android:name=".MarkasActivity" />
+        <activity android:name=".testac" />
+        <activity android:name=".searc_orders" />
+        <activity android:name=".Search_fatora" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".fatoraplus" />
+        <activity
+            android:name=".myorders"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity android:name=".okokActivity" />
+        <activity android:name=".welcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CardmeActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".userActivity" />
+        <activity android:name=".DepitemActivity" />
+        <activity android:name=".DepsActivity" />
+        <activity android:name=".PostActivity" />
+        <activity android:name=".SelectActivity" />
+        <activity android:name=".MaryamActivity" />
+        <activity android:name=".SettingActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity android:name=".AdminAddActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

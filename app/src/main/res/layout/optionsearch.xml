@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="200dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ttitle_option"
+        android:text="أختر طريقة البحث"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        />
+    <RadioButton
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="عنطريق رقم الفاتورة"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/radio1"
+        android:layout_below="@id/ttitle_option"
+        />
+    <RadioButton
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="عنطريق تاريخ الفاتورة"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/radio2"
+        android:layout_below="@id/radio1"
+        />
+    <RadioButton
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="عنطريق الملاحظات"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/radio3"
+        android:layout_below="@id/radio2"
+        />
+   <ImageView
+       android:layout_width="50dp"
+       android:id="@+id/search_btn_order"
+       android:layout_height="50dp"
+       android:src="@drawable/ic_search"
+       android:layout_below="@id/radio3"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="15dp"
+       />
+
+</RelativeLayout>

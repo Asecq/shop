@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:background="#001621"
+    tools:context=".MainActivity">
+
+<ImageView
+    android:id="@+id/applogo"
+    android:layout_width="300dp"
+    android:layout_height="100dp"
+    android:layout_marginTop="60dp"
+    android:src="@drawable/tower"
+    android:layout_centerHorizontal="true"
+    />
+
+    <TextView
+        android:id="@+id/app_solon"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/applogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="سوق الشورجة الألكتروني"
+        android:textColor="#A5734D"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        android:textStyle="bold|italic"
+        />
+
+    <TextView
+        android:id="@+id/app_to"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_solon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="للتجارة العامة"
+        android:textAlignment="center"
+        android:textColor="#AAB7B9"
+        android:textSize="18dp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/main_login"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/app_to"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs_desgin"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="تسجيل دخول"
+        />
+<TextView
+    android:id="@+id/text_folw"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/main_login"
+    android:text="تابعنا"
+    android:textColor="@color/white"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    android:textSize="25dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="5dp"
+    />
+    <LinearLayout
+        android:id="@+id/lainer_suc"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="90dp"
+        android:layout_below="@id/text_folw"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginRight="178dp"
+
+        >
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_below="@id/text_folw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/facebook"
+            />
+
+        <ImageView
+            android:id="@+id/instagram"
+            android:layout_below="@id/text_folw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_width="40dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_height="40dp"
+            android:src="@drawable/instagram"
+            android:layout_marginRight="10dp"
+            />
+        <ImageView
+            android:id="@+id/telegram"
+            android:layout_below="@id/text_folw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_width="40dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_height="40dp"
+            android:src="@drawable/telegram"
+            android:layout_marginRight="10dp"
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/about_us"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/lainer_suc"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs_desgin"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="نبذة عن الشركة"
+        />
+
+
+</RelativeLayout>

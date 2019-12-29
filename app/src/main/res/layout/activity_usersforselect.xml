@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".usersforselectActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/users_select"
+        android:text="أختر زبون*"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#F50505"
+        />
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/users_select"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:src="@drawable/ic_voice"
+        android:layout_marginRight="10dp"
+        android:id="@+id/voice_btn"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/users_select"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:hint="بحث عن زبون ..."
+        android:id="@+id/search_users"
+        android:textColorHint="#727070"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_search"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="match_parent"
+        android:id="@+id/re_users"
+        android:layout_below="@id/search_users"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

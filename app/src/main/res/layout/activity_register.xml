@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:background="@color/colorAccent"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+    android:id="@+id/redg_logo"
+    android:layout_width="300dp"
+    android:layout_height="100dp"
+    android:layout_marginTop="60dp"
+    android:src="@drawable/tower"
+    android:layout_centerHorizontal="true"
+    />
+
+    <TextView
+        android:id="@+id/reg_solon"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/redg_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="شركة القلعة الذهبية"
+        android:textColor="#A5734D"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        android:textStyle="bold|italic"
+        />
+    <View
+        android:id="@+id/reg_view"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/white"
+
+        android:layout_below="@id/reg_solon"/>
+    <TextView
+        android:id="@+id/text_reg_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="انشاء مستخدم جديد"
+        android:layout_below="@+id/reg_view"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+
+        />
+    <EditText
+        android:id="@+id/name_register"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs_desgin"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="الأسم ...."
+        android:layout_below="@+id/text_reg_welcome"
+        android:textColorHint="#646060"
+        android:theme="@style/CustomEditTextView"
+        android:textColor="@color/white"
+        android:inputType="text"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/phone_register"
+        android:layout_below="@id/name_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs_desgin"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="رقم الهاتف  ..."
+        android:inputType="number"
+        android:gravity="center"
+        android:textColorHint="#646060"
+        android:theme="@style/CustomEditTextView"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/pass_register"
+        android:inputType="textPassword"
+        android:gravity="center"
+        android:layout_below="@+id/phone_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs_desgin"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint=" ... كلمة السر"
+        android:textColorHint="#646060"
+        android:theme="@style/CustomEditTextView"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pass_register"
+        android:background="@drawable/inputs_desgin"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:text="انشاء الحساب"
+        />
+
+
+
+</RelativeLayout>

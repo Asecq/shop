@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:background="#673AB7"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/close_cardEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:textSize="27dp"
+        android:textColor="#BB0404"
+        />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/title_editorder"
+    android:text="تعديل الطلب"
+    android:textSize="24dp"
+    android:layout_marginTop="10dp"
+    android:textColor="@color/white"
+    android:gravity="center"
+    android:textAlignment="center"
+    android:layout_centerHorizontal="true"
+
+
+    />
+    <RelativeLayout
+        android:layout_below="@id/title_editorder"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:id="@+id/numliner"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/salp_number_edit"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:background="@color/white"
+            android:layout_alignParentStart="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/number_order_edit"
+            android:text="1"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            />
+        <Button
+            android:layout_width="40dp"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:id="@+id/plus_number_edit"
+            android:text="+"
+            android:textSize="24dp"
+            android:layout_alignParentEnd="true"
+            />
+    </RelativeLayout>
+        <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/text_price_total"
+             android:layout_centerHorizontal="true"
+             android:text="المبلغ الكلي"
+             android:textColor="@color/white"
+             android:textSize="24dp"
+             android:layout_marginTop="10dp"
+            android:layout_below="@+id/numliner"
+            />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_price_edit"
+        android:layout_below="@id/text_price_total"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="19dp"
+        android:layout_marginTop="10dp"
+        android:text="100 $"
+        android:textColor="#EECF0A"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/save_orderEdit"
+        android:layout_below="@id/title_price_edit"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:text="حفظ الطلب"
+        android:background="#03A9F4"
+        android:textSize="17dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+
+        />
+
+</RelativeLayout>

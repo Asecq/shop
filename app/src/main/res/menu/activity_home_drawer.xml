@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/category"
+            android:title = "الأقسام"
+            android:iconTint="@color/white"/>
+        <item
+            android:id="@+id/markates"
+            android:icon="@drawable/cart"
+            android:title="الماركات"
+            android:iconTint="@color/white"/>
+        <item
+            android:id="@+id/cardmehome"
+            android:icon="@drawable/cart"
+            android:title="محفظتي"
+            android:iconTint="@color/white"/>
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="معلومات الحساب"
+            android:iconTint="@color/white"/>
+        <item
+            android:id="@+id/nav_call"
+            android:icon="@drawable/ic_call"
+            android:title="اتصل بنا"
+            android:iconTint="@color/white"/>
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_account"
+            android:title="من نحن ؟"
+            android:iconTint="@color/white"/>
+        <item
+            android:id="@+id/ordermenav"
+            android:icon="@drawable/work"
+            android:title="الفاتورة"
+            android:iconTint="@color/white"/>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="تسجيل خروج"
+            android:iconTint="@color/white"/>
+    </group>
+
+
+</menu>

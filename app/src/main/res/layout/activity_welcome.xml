@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/post_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    tools:context=".welcomeActivity">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/v_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.viewpager.widget.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/dotsliner"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/btn_back_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="رجوع"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        android:textSize="18dp"
+        />
+    <TextView
+        android:id="@+id/btn_next_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="التالي"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        />
+    <TextView
+        android:id="@+id/go_to_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="تسجيل دخول"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="470dp"
+        android:visibility="invisible"
+        android:textColor="#0D89F0"
+        android:textSize="19dp"
+        />
+    <TextView
+        android:id="@+id/about_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="من نحن ؟"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="470dp"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        />
+
+
+</RelativeLayout>

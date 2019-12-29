@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:layoutDirection="rtl"
+    tools:context=".PostActivity">
+
+        <TextView
+            android:id="@+id/title_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="test"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            />
+    <TextView
+        android:id="@+id/save_image"
+        android:text="حفظ الصورة الى الأستوديو"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="right"
+        android:drawableStart="@drawable/ic_file_download"
+        android:textSize="14dp"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/title_post"
+        android:layout_marginTop="5dp"
+        />
+
+
+    <com.zolad.zoominimageview.ZoomInImageView
+        android:id="@+id/infopost_image"
+        android:layout_width="340dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/save_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/borderimage"
+        android:scaleType="fitXY"
+        android:src="@drawable/shoess" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="اسحب الصورة للتكبير"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/infopost_image"
+        android:layout_marginTop="5dp"
+        android:id="@+id/title_zoom"
+        android:textColor="#B8B6B6"
+        />
+
+
+    <View
+        android:id="@+id/view_post1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/white"
+        android:layout_below="@id/title_zoom"
+        android:layout_marginTop="5dp"
+        />
+
+
+    <ListView
+        android:id="@+id/listview_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_post1"
+        android:layout_marginBottom="7dp"
+        android:divider="#FFFFFF"
+        android:dividerHeight="4px"></ListView>
+    <View
+        android:id="@+id/view_post4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/listview_show"
+        android:background="@color/colorAccent"></View>
+
+<TextView
+    android:id="@+id/about_des"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="الوصف"
+    android:textColor="#B84C4C"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    android:textSize="25dp"
+    android:layout_below="@id/view_post4"
+    />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/infopost_des"
+        android:layout_below="@id/about_des"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="#AFAFAF"
+        android:layout_marginTop="5dp"
+        android:textSize="19dp"
+        />
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/infopost_des"
+        android:id="@+id/select_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_how_to_went"
+            android:text="أختر طريقة الشراء ؟"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="19dp"
+            />
+        <Spinner
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/text_how_to_went"
+            android:id="@+id/spinner2"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+        </Spinner>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/spinner2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/salp_number_order1"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:background="@color/white"
+                android:layout_alignParentStart="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/number_order1"
+                android:text="1"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                />
+            <Button
+                android:layout_width="40dp"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                android:id="@+id/plus_number_order1"
+                android:text="+"
+                android:textSize="24dp"
+                android:layout_alignParentEnd="true"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_price_total"
+        android:layout_centerHorizontal="true"
+        android:text="المبلغ الكلي"
+        android:layout_below="@id/select_layout"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/price_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_price_total"
+        android:text="200"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true" />
+<Button
+    android:id="@+id/order_btn"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/price_total"
+    android:layout_width="match_parent"
+    android:text="اضافة الى المحفطة"
+    android:textSize="22dp"
+    android:textStyle="bold"
+    android:textColor="#2196F3"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:background="@drawable/inputs_desgin"
+    android:layout_height="80dp" />
+</RelativeLayout>
+</ScrollView>

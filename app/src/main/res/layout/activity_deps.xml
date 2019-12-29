@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:layoutDirection="rtl"
+    tools:context=".DepsActivity">
+    <ImageView
+        android:id="@+id/logo_depss"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/tower"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_logo_deps"
+        android:text="الأقسام"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@id/logo_depss"
+        android:layout_marginTop="20dp"
+        />
+    <ListView
+        android:id="@+id/listview_deps"
+        android:layout_marginTop="20dp"
+        android:cacheColorHint="@color/white"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        android:layout_below="@id/text_logo_deps"
+        android:layout_width="match_parent"
+        android:layout_height="390dp">
+
+
+    </ListView>
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:background="#003D5B"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:text="برمجة وتصميم القلعة الذهبية"
+            android:layout_gravity="center"
+
+            android:textColor="@color/white"
+
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

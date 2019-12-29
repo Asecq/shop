@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layoutDirection="rtl"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="190dp"
+        android:id="@+id/img_cardme"
+        android:scaleType="fitXY"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView
+        android:id="@+id/infocard_name"
+        android:layout_width="wrap_content"
+        android:text="المنتج الفلاني"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="160dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/card_one"
+        android:text="كارتونة"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_alignParentEnd="true"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dep_card"
+        android:text="القسم"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_below="@id/card_one"
+        android:layout_alignParentEnd="true"
+
+        />
+    <TextView
+        android:id="@+id/infocard_price"
+        android:layout_below="@id/infocard_name"
+        android:layout_width="wrap_content"
+        android:text="$3000"
+        android:layout_height="wrap_content"
+        android:textColor="#D30000"
+        android:layout_marginRight="160dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        />
+    <RelativeLayout
+        android:id="@+id/lay_plus"
+        android:layout_width="150dp"
+        android:layout_below="@id/infocard_price"
+        android:layout_marginRight="190dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/row_plus"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/pluse_new"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="+"
+            android:gravity="center"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="4dp"
+            android:textStyle="bold"
+            android:textColor="#F3FDF3"
+            android:textSize="25dp"
+            android:layout_alignParentStart="true"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/new_number"
+            android:text="1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/salp_new"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="-"
+            android:gravity="center"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="4dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_alignParentEnd="true"
+            android:textSize="28dp"
+            />
+
+
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/delete_card"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_delete"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/infocard_price"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <com.rey.material.widget.CheckBox
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="تحديد"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:id="@+id/checkbox_card"
+        android:layout_below="@id/infocard_price"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="180dp"
+        android:layout_marginTop="70dp"
+        />
+</RelativeLayout>
