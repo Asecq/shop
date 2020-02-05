@@ -2,18 +2,18 @@ package com.alii.shope;
 
 public class Calls  {
 
-    String code , time , note , number , statics , saller , dep , user;
+    String code , time , note , number , Sfatora , saller , dep , user;
 
     public Calls() {
     }
 
-    public Calls(String user ,String code, String time, String note, String number , String statics , String saller , String dep) {
+    public Calls(String user ,String code, String time, String note, String number , String Sfatora , String saller , String dep) {
         this.code = code;
         this.time = time;
         this.note = note;
         this.number = number;
         this.saller = saller;
-        this.statics = statics;
+        this.Sfatora = Sfatora;
         this.dep = dep;
         this.dep = user;
     }
@@ -43,11 +43,11 @@ public class Calls  {
     }
 
     public String getStatics() {
-        return statics;
+        return Sfatora;
     }
 
     public void setStatics(String statics) {
-        this.statics = statics;
+        this.Sfatora = statics;
     }
 
     public String getNumber() {

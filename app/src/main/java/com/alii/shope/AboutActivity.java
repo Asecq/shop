@@ -143,22 +143,22 @@ public class AboutActivity extends AppCompatActivity {
                TextView number = findViewById(R.id.numberfatora);
                TextView sta = findViewById(R.id.static_fatora);
                ImageView img_static = findViewById(R.id.img_static);
-                if(dataSnapshot.child("static").getValue().toString().equals("2")){
+                if(dataSnapshot.child("Sfatora").getValue().toString().equals("2")){
                     sta.setText("تم التجهيز");
                     sta.setTextColor(Color.rgb(0, 204, 0));
                     img_static.setImageResource(R.drawable.donns);
                 }
-                if(dataSnapshot.child("static").getValue().toString().equals("0")){
+                if(dataSnapshot.child("Sfatora").getValue().toString().equals("0")){
                     sta.setText("قيد الأرسال ...");
                     sta.setTextColor(Color.rgb(204, 255, 255));
                     img_static.setImageResource(R.drawable.sending);
                 }
-                if(dataSnapshot.child("static").getValue().toString().equals("3")){
+                if(dataSnapshot.child("Sfatora").getValue().toString().equals("3")){
                     sta.setText("تم تجميدها");
                     sta.setTextColor(Color.rgb(255, 0, 0));
                     img_static.setImageResource(R.drawable.stopp);
                 }
-                if(dataSnapshot.child("static").getValue().toString().equals("1")){
+                if(dataSnapshot.child("Sfatora").getValue().toString().equals("1")){
                     sta.setText("تم الأستلام");
                     sta.setTextColor(Color.rgb(0, 153, 255));
                     img_static.setImageResource(R.drawable.seen);

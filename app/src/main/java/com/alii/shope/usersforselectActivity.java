@@ -198,6 +198,7 @@ public class usersforselectActivity extends AppCompatActivity {
                                public void onClick(View v) {
                                    Intent intent = new Intent(usersforselectActivity.this,CardmeActivity.class);
                                    intent.putExtra("id",testuser.getPhone().toString());
+                                   intent.putExtra("username",testuser.getUsername().toString());
                                    startActivity(intent);
                                }
                            });
@@ -228,6 +229,7 @@ public class usersforselectActivity extends AppCompatActivity {
                                public void onClick(View v) {
                                    Intent intent = new Intent(usersforselectActivity.this,CardmeActivity.class);
                                    intent.putExtra("id",testuser.getPhone().toString());
+                                   intent.putExtra("username",testuser.getUsername().toString());
                                    startActivity(intent);
                                }
                            });

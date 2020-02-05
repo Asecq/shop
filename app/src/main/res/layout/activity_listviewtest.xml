@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="rtl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".listviewtestActivity">
+    <RelativeLayout
+        android:id="@+id/rel_accouintg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="التاريخ"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:textSize="18dp"
+            android:textColor="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="مدين"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="90dp"
+            android:textSize="18dp"
+            android:textColor="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="دائن"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="160dp"
+            android:textSize="18dp"
+            android:textColor="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="الرصيد"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="220dp"
+            android:textSize="18dp"
+            android:textColor="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="البيان"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="320dp"
+            android:textSize="18dp"
+            android:textColor="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+    <ListView
+        android:layout_below="@id/rel_accouintg"
+        android:id="@+id/list_accounting"
+        android:divider="#673AB7"
+        android:dividerHeight="4px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    </ListView>
+
+</RelativeLayout>

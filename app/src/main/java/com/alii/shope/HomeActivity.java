@@ -142,7 +142,7 @@ public class HomeActivity extends AppCompatActivity
         lay_4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog ds = new Dialog(HomeActivity.this);
+                /*final Dialog ds = new Dialog(HomeActivity.this);
                 ds.setTitle("تبليغ");
                 ds.setContentView(R.layout.senttoserver);
                 ds.show();
@@ -152,7 +152,9 @@ public class HomeActivity extends AppCompatActivity
                     public void onClick(View v) {
                         ds.dismiss();
                     }
-                });
+                });*/
+                Intent intent = new Intent(HomeActivity.this,AccountingActivity.class);
+                startActivity(intent);
 
             }
         });

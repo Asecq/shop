@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layoutDirection="rtl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountingActivity">
+    <TextView
+        android:id="@+id/accounting_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="كشف الحساب"
+        android:textColor="#BF0034"
+        android:textSize="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="160001"
+        android:layout_centerHorizontal="true"
+        android:textColor="#2224C7"
+        android:textStyle="bold"
+        android:id="@+id/accounting_id"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/accounting_title"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ali mohammed"
+        android:layout_centerHorizontal="true"
+        android:textColor="#2224C7"
+        android:textStyle="bold"
+        android:id="@+id/accounting_name"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/accounting_id"
+        />
+    <ImageView
+        android:id="@+id/back_accounting"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_arrow_back"
+        />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/colorAccent"
+    android:layout_below="@id/accounting_name"
+    android:id="@+id/vi_tilte_accounting"
+    />
+
+    <RelativeLayout
+        android:id="@+id/title_accounting"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/vi_tilte_accounting"
+        android:layout_height="30dp">
+        <View
+            android:layout_width="2dp"
+            android:background="#000000"
+            android:layout_marginRight="95dp"
+            android:layout_height="wrap_content"
+            />
+        <View
+            android:layout_width="2dp"
+            android:background="#000000"
+            android:layout_marginRight="150dp"
+            android:layout_height="wrap_content"
+            />
+        <View
+            android:layout_width="2dp"
+            android:background="#000000"
+            android:layout_marginRight="205dp"
+            android:layout_height="wrap_content"
+            />
+        <View
+            android:layout_width="2dp"
+            android:background="#000000"
+            android:layout_marginRight="260dp"
+            android:layout_height="wrap_content"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:background="#000000"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="التاريخ"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#3F51B5"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مدين"
+            android:textSize="18dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="105dp"
+            android:textColor="#3F51B5"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="دائن"
+            android:textSize="18dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="165dp"
+            android:textColor="#3F51B5"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الرصيد"
+            android:textSize="18dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="210dp"
+            android:textColor="#3F51B5"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="البيان"
+            android:textSize="18dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="300dp"
+            android:textColor="#3F51B5"
+            />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/re_accounting"
+        android:layout_below="@id/title_accounting"
+        ></androidx.recyclerview.widget.RecyclerView>
+    <RelativeLayout
+        android:id="@+id/total_accounting"
+        android:layout_below="@id/re_accounting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="المجموع"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#E70C0C"
+            android:id="@+id/total_title_ac"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/total_title_ac"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/title_total_madin"
+            android:text="مجموع المدين"
+            android:textColor="#E70C0C"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="140dp"
+            android:layout_marginBottom="0dp"
+            android:text="مجموع الدائن"
+            android:layout_below="@+id/total_title_ac"
+            android:textColor="#E70C0C"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="270dp"
+            android:layout_marginBottom="0dp"
+            android:text="صافي الرصيد"
+            android:layout_below="@+id/total_title_ac"
+            android:textColor="#E70C0C"
+            android:textSize="18dp" />
+        <View
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:background="#E70C0C"
+            android:layout_below="@id/total_title_ac"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="125dp"
+            />
+        <View
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:background="#E70C0C"
+            android:layout_below="@id/total_title_ac"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="255dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/vi_title_maden"
+            android:background="#E70C0C"
+            android:layout_below="@id/title_total_madin"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/ac_total_maden"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#0928D5"
+            android:layout_below="@id/vi_title_maden"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#0928D5"
+            android:id="@+id/ac_total_daan"
+            android:layout_below="@id/vi_title_maden"
+            android:layout_marginRight="130dp"
+            android:textStyle="bold"
+            />
+        <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#0928D5"
+            android:id="@+id/ac_total_full"
+        android:layout_below="@id/vi_title_maden"
+        android:layout_marginRight="260dp"
+        android:textStyle="bold"
+        />
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

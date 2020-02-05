@@ -112,7 +112,7 @@ public class myorders extends AppCompatActivity implements AdapterView.OnItemSel
             protected void onBindViewHolder(@NonNull final d_holder d_holder, final int i, @NonNull final Calls dons) {
                 String num = dons.getNumber().toString();
                 DatabaseReference numbersdata = FirebaseDatabase.getInstance().getReference();
-                numbersdata.child("Calls").child(num).child("static").addListenerForSingleValueEvent(new ValueEventListener() {
+                numbersdata.child("Calls").child(num).child("Sfatora").addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         if (dataSnapshot.getValue().toString().equals("0")){
@@ -143,13 +143,10 @@ public class myorders extends AppCompatActivity implements AdapterView.OnItemSel
 
                     }
                 });
-                if(!TextUtils.isEmpty(dons.getSaller().toString())){
-                    if(Prevalent.currentOnlineUser.getType().equals("saller")){
-                        d_holder.saller.setText(dons.getUser());
-                    }else if(Prevalent.currentOnlineUser.getType().equals("user")){
-                        d_holder.saller.setText(dons.getSaller());
-                    }
-                    d_holder.mandop.setVisibility(View.VISIBLE);
+                if(Prevalent.currentOnlineUser.getType().equals("saller")){
+                    d_holder.saller.setText(dons.getUser());
+                }else if(Prevalent.currentOnlineUser.getType().equals("user")){
+                    d_holder.saller.setText(dons.getSaller());
                 }
                 d_holder.dep.setText(dons.getDep());
                 d_holder.code.setText(dons.getNumber());
@@ -203,7 +200,7 @@ public class myorders extends AppCompatActivity implements AdapterView.OnItemSel
                         protected void onBindViewHolder(@NonNull final d_holder d_holder, final int i, @NonNull final Calls dons) {
                             String num = dons.getNumber().toString();
                             DatabaseReference numbersdata = FirebaseDatabase.getInstance().getReference();
-                            numbersdata.child("Calls").child(num).child("static").addListenerForSingleValueEvent(new ValueEventListener() {
+                            numbersdata.child("Calls").child(num).child("Sfatora").addListenerForSingleValueEvent(new ValueEventListener() {
                                 @Override
                                 public void onDataChange(DataSnapshot dataSnapshot) {
                                     if (dataSnapshot.getValue().toString().equals("0")){
@@ -234,13 +231,10 @@ public class myorders extends AppCompatActivity implements AdapterView.OnItemSel
 
                                 }
                             });
-                            if(!TextUtils.isEmpty(dons.getSaller().toString())){
-                                if(Prevalent.currentOnlineUser.getType().equals("saller")){
-                                    d_holder.saller.setText(dons.getUser());
-                                }else if(Prevalent.currentOnlineUser.getType().equals("user")){
-                                    d_holder.saller.setText(dons.getSaller());
-                                }
-                                d_holder.mandop.setVisibility(View.VISIBLE);
+                            if(Prevalent.currentOnlineUser.getType().equals("saller")){
+                                d_holder.saller.setText(dons.getUser());
+                            }else if(Prevalent.currentOnlineUser.getType().equals("user")){
+                                d_holder.saller.setText(dons.getSaller());
                             }
                             d_holder.dep.setText(dons.getDep());
                             d_holder.code.setText(String.valueOf(dons.getNumber()));
@@ -299,7 +293,7 @@ public class myorders extends AppCompatActivity implements AdapterView.OnItemSel
               protected void onBindViewHolder(@NonNull final d_holder d_holder, final int i, @NonNull final Calls dons) {
                   String num = dons.getNumber().toString();
                   DatabaseReference numbersdata = FirebaseDatabase.getInstance().getReference();
-                  numbersdata.child("Calls").child(num).child("static").addListenerForSingleValueEvent(new ValueEventListener() {
+                  numbersdata.child("Calls").child(num).child("Sfatora").addListenerForSingleValueEvent(new ValueEventListener() {
                       @Override
                       public void onDataChange(DataSnapshot dataSnapshot) {
                           if (dataSnapshot.getValue().toString().equals("0")){
@@ -330,6 +324,13 @@ public class myorders extends AppCompatActivity implements AdapterView.OnItemSel
 
                       }
                   });
+
+                      if(Prevalent.currentOnlineUser.getType().equals("saller")){
+                          d_holder.saller.setText(dons.getUser());
+                      }else if(Prevalent.currentOnlineUser.getType().equals("user")){
+                          d_holder.saller.setText(dons.getSaller());
+                      }
+                      d_holder.mandop.setVisibility(View.VISIBLE);
                   d_holder.code.setText(String.valueOf(dons.getNumber()));
                   d_holder.note.setText(dons.getNote());
                   d_holder.time.setText(dons.getTime());
@@ -341,14 +342,6 @@ public class myorders extends AppCompatActivity implements AdapterView.OnItemSel
                           startActivity(intent);
                       }
                   });
-                  if(!TextUtils.isEmpty(dons.getSaller().toString())){
-                      if(Prevalent.currentOnlineUser.getType().equals("saller")){
-                          d_holder.saller.setText(dons.getUser());
-                      }else if(Prevalent.currentOnlineUser.getType().equals("user")){
-                          d_holder.saller.setText(dons.getSaller());
-                      }
-                      d_holder.mandop.setVisibility(View.VISIBLE);
-                  }
                  d_holder.dep.setText(dons.getDep());
 
               }
@@ -437,13 +430,10 @@ public class myorders extends AppCompatActivity implements AdapterView.OnItemSel
                                     d_holder.txt_static.setText("(" + "تم تجميدها" + ")");
                                     d_holder.txt_static.setTextColor(Color.RED);
                                 }
-                                if(!TextUtils.isEmpty(dons.getSaller().toString())){
-                                    if(Prevalent.currentOnlineUser.getType().equals("saller")){
-                                        d_holder.saller.setText(dons.getUser());
-                                    }else if(Prevalent.currentOnlineUser.getType().equals("user")){
-                                        d_holder.saller.setText(dons.getSaller());
-                                    }
-                                    d_holder.mandop.setVisibility(View.VISIBLE);
+                                if(Prevalent.currentOnlineUser.getType().equals("saller")){
+                                    d_holder.saller.setText(dons.getUser());
+                                }else if(Prevalent.currentOnlineUser.getType().equals("user")){
+                                    d_holder.saller.setText(dons.getSaller());
                                 }
                                 d_holder.dep.setText(dons.getDep());
                                 d_holder.code.setText(String.valueOf(dons.getNumber()));
@@ -527,13 +517,10 @@ public class myorders extends AppCompatActivity implements AdapterView.OnItemSel
 
                                      }
                                  });
-                                 if(!TextUtils.isEmpty(dons.getSaller().toString())){
-                                     if(Prevalent.currentOnlineUser.getType().equals("saller")){
-                                         d_holder.saller.setText(dons.getUser());
-                                     }else if(Prevalent.currentOnlineUser.getType().equals("user")){
-                                         d_holder.saller.setText(dons.getSaller());
-                                     }
-                                     d_holder.mandop.setVisibility(View.VISIBLE);
+                                 if(Prevalent.currentOnlineUser.getType().equals("saller")){
+                                     d_holder.saller.setText(dons.getUser());
+                                 }else if(Prevalent.currentOnlineUser.getType().equals("user")){
+                                     d_holder.saller.setText(dons.getSaller());
                                  }
                                  d_holder.dep.setText(dons.getDep());
                                  d_holder.code.setText(String.valueOf(dons.getNumber()));
@@ -626,7 +613,7 @@ public class myorders extends AppCompatActivity implements AdapterView.OnItemSel
                     protected void onBindViewHolder(@NonNull final d_holder d_holder, final int i, @NonNull final Calls dons) {
                         String num = dons.getNumber().toString();
                         DatabaseReference numbersdata = FirebaseDatabase.getInstance().getReference();
-                        numbersdata.child("Calls").child(num).child("static").addListenerForSingleValueEvent(new ValueEventListener() {
+                        numbersdata.child("Calls").child(num).child("Sfatora").addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(DataSnapshot dataSnapshot) {
                                 if (dataSnapshot.getValue().toString().equals("0")) {
@@ -657,13 +644,10 @@ public class myorders extends AppCompatActivity implements AdapterView.OnItemSel
 
                             }
                         });
-                        if(!TextUtils.isEmpty(dons.getSaller().toString())){
-                            if(Prevalent.currentOnlineUser.getType().equals("saller")){
-                                d_holder.saller.setText(dons.getUser());
-                            }else if(Prevalent.currentOnlineUser.getType().equals("user")){
-                                d_holder.saller.setText(dons.getSaller());
-                            }
-                            d_holder.mandop.setVisibility(View.VISIBLE);
+                        if(Prevalent.currentOnlineUser.getType().equals("saller")){
+                            d_holder.saller.setText(dons.getUser());
+                        }else if(Prevalent.currentOnlineUser.getType().equals("user")){
+                            d_holder.saller.setText(dons.getSaller());
                         }
                         d_holder.dep.setText(dons.getDep());
                         d_holder.code.setText(String.valueOf(dons.getNumber()));

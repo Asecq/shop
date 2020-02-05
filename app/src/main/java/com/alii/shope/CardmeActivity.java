@@ -60,6 +60,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Locale;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -679,21 +680,21 @@ holder_me.delete.setEnabled(true);
                                         hashSend.put("Units", check_unit);
                                         hashSend.put("Prices", check_price);
                                         hashSend.put("Ones", check_num);
-                                        hashSend.put("static","0");
+                                        hashSend.put("Sfatora","0");
                                         if(!TextUtils.isEmpty(user_user)){
                                             hashSend.put("saller","yes");
                                         }
                                         hashSend.put("dep",cards.getDep());
                                         hashSend.put("Ptotal",check_total_price);
 
-                                        DateFormat df = new SimpleDateFormat("/d/yyyy HH:mm");
+                                        DateFormat df = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss" , Locale.ENGLISH);
                                         SimpleDateFormat sdf = new SimpleDateFormat("MM");
                                         final String month = sdf.format(new Date());
                                         final String now = df.format(new Date());
-                                        hashSend.put("time",month + now);
+                                        hashSend.put("time", now);
                                         final HashMap<String , Object> callme = new HashMap<>();
 
-                                        callme.put("time",month + now);
+                                        callme.put("time",now);
                                         String n = totally.replace("$", "");
                                         final String re = n.replace("المبلغ الكلي : ", "");
                                         hashSend.put("Price", re);
@@ -715,19 +716,18 @@ holder_me.delete.setEnabled(true);
                                         hashSend2.put("Units", check_unit);
                                         hashSend2.put("Prices", check_price);
                                         hashSend2.put("Ones", check_num);
-                                        hashSend2.put("static","0");
+                                        hashSend2.put("Sfatora","0");
                                         hashSend2.put("saller",Prevalent.currentOnlineUser.getUsername());
                                         hashSend2.put("dep",cards.getDep());
                                         hashSend2.put("Ptotal",check_total_price);
 
-                                        DateFormat df2 = new SimpleDateFormat("/d/yyyy HH:mm");
-                                        SimpleDateFormat sdf2 = new SimpleDateFormat("MM");
-                                        final String month2 = sdf2.format(new Date());
-                                        final String now2= df2.format(new Date());
-                                        hashSend2.put("time",month2 + now2);
+                                        //--
+                                        DateFormat df1 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss" , Locale.ENGLISH);
+                                        final String now2 = df.format(new Date());
+                                        hashSend2.put("time",now2);
                                         final HashMap<String , Object> callme2 = new HashMap<>();
 
-                                        callme2.put("time",month2 + now2);
+                                        callme2.put("time",now2);
                                         String n2 = totally.replace("$", "");
                                         final String re2 = n2.replace("المبلغ الكلي : ", "");
                                         hashSend2.put("Price", re2);
@@ -1141,6 +1141,7 @@ holder_me.delete.setEnabled(true);
                                 check_dep.remove(cards.getDep());
                                 check_unit.remove(cards.getMaintype());
                                 check_num.remove(cards.getNum());
+                                check_total_price.remove(cards.getPrice());
                                 check_count.remove(String.valueOf(cards.getCount()));
                                    Double d = Double.parseDouble(cards.getPricepost());
                                    double oneType1 = (double) (d * cards.getCount());

@@ -16,7 +16,6 @@
         android:id="@+id/re_cardme1"
         android:layout_width="match_parent"
         android:layout_height="600dp"
-
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"></androidx.recyclerview.widget.RecyclerView>
 <View
@@ -76,17 +75,17 @@
         android:id="@+id/select_zpon"
         android:text=""
         android:layout_below="@+id/price_total_fatora"
-        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginLeft="20dp"
         android:textColor="@color/colorAccent"
-        android:textSize="12dp"
+        android:textSize="11dp"
         android:gravity="center"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="5dp"
         android:textStyle="bold"
 
         />
 <Button
-    android:layout_below="@id/price_total_fatora"
+    android:layout_below="@id/select_zpon"
     android:id="@+id/send_fatora"
     android:textColor="#FFFFFF"
     android:text="ارسال الفاتورة"
